@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from 'react-bootstrap/Button';
+import {AiOutlineShoppingCart} from 'react-icons/ai';
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          modificacion desde github
+          Mi primer proyecto en react
         </a>
+        <Button variant="primary">boton carrito
+        < AiOutlineShoppingCart />
+        </Button>
       </header>
     </div>
   );
