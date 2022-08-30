@@ -3,9 +3,11 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import {AiOutlineShoppingCart} from 'react-icons/ai';
 import { NavBar } from './components/navbar';
+import ItemListContainer from './containers/ItemListContainer';
 
 function App() {
   return (
+  <>
     <div className="App">
       <NavBar/>
       <header className="App-header">
@@ -24,8 +26,11 @@ function App() {
         <Button variant="primary">boton carrito
         < AiOutlineShoppingCart />
         </Button>
+        <ItemListContainer greeting={"Bienvenidos a Nuestra App "} />
+
       </header>
     </div>
+  </>
   );
 }
 
